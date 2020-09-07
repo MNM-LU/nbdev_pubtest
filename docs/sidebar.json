@@ -1,6 +1,6 @@
 {
   "nbdev_pubtest": {
     "Overview": "/",
-    "module name here": "core.html"
+    "Main run file for total execution": "core.html"
   }
 }

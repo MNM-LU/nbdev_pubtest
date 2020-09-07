@@ -1,13 +1,13 @@
 ---
 
-title: module name here
+title: Main run file for total execution
 
 
 keywords: fastai
 sidebar: home_sidebar
 
-summary: "API details."
-description: "API details."
+summary: "The aim here is to make a complete run environment."
+description: "The aim here is to make a complete run environment."
 nb_path: "00_core.ipynb"
 ---
 <!--
@@ -25,6 +25,573 @@ nb_path: "00_core.ipynb"
     {% raw %}
     
 <div class="cell border-box-sizing code_cell rendered">
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+</div>
+    {% endraw %}
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Load-the-ligand-list-from-.csv-file">Load the ligand list from .csv file<a class="anchor-link" href="#Load-the-ligand-list-from-.csv-file"> </a></h2>
+</div>
+</div>
+</div>
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">ligandList</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Gene Name</th>
+      <th>Gene ID</th>
+      <th>Isoform</th>
+      <th>Species</th>
+      <th>SP-TR</th>
+      <th>FID</th>
+      <th>Description</th>
+      <th>OS</th>
+      <th>OX</th>
+      <th>GN</th>
+      <th>PE</th>
+      <th>SV</th>
+      <th>Protein interaction with surface protein</th>
+      <th>Interact human</th>
+      <th>Interact mouse</th>
+      <th>Surface protein alternative name</th>
+      <th>String</th>
+      <th>Hippie</th>
+      <th>Sequence</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>TMP</td>
+      <td>TMP _human</td>
+      <td>1</td>
+      <td>Human</td>
+      <td>SP</td>
+      <td>Q549806</td>
+      <td>TMP_HUMAN TEST TRANSPORTER 1</td>
+      <td>HOMO SAPIENS</td>
+      <td>5739</td>
+      <td>TMP</td>
+      <td>1</td>
+      <td>3</td>
+      <td>TEST_human</td>
+      <td>Y</td>
+      <td>N</td>
+      <td>Solute Carrier Test</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>KJADSHFKUERUGVMNBADSFMJRFSJHSMADHBJASDHGVNZXMZ...</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Filter-out-the-ligands-from-species-with-shown-interaction">Filter out the ligands from species with shown interaction<a class="anchor-link" href="#Filter-out-the-ligands-from-species-with-shown-interaction"> </a></h2><p>The princliple here is to select only the ligands which have been shown to function in this specific species</p>
+
+</div>
+</div>
+</div>
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+</div>
+    {% endraw %}
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Run-parameters">Run parameters<a class="anchor-link" href="#Run-parameters"> </a></h2>
+</div>
+</div>
+</div>
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+</div>
+    {% endraw %}
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Main-mk_fragments-function">Main mk_fragments function<a class="anchor-link" href="#Main-mk_fragments-function"> </a></h2>
+</div>
+</div>
+</div>
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<h4 id="mk_fragments" class="doc_header"><code>mk_fragments</code><a href="https://github.com/mnm-tb/nbdev_pubtest/tree/master/nbdev_pubtest/core.py#L31" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>mk_fragments</code>(<strong><code>aa_seq</code></strong>, <strong><code>aa_length</code></strong>)</p>
+</blockquote>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Generate-fragments-from-all-selected-AA-sequences">Generate fragments from all selected AA sequences<a class="anchor-link" href="#Generate-fragments-from-all-selected-AA-sequences"> </a></h2>
+</div>
+</div>
+</div>
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">len</span><span class="p">(</span><span class="n">all_aa_fragments</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>152</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">unique_aa_fragments</span><span class="o">.</span><span class="n">shape</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>(152, 1)</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">unique_aa_fragments</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>0</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>KJADSHFKU</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>JADSHFKUE</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>ADSHFKUER</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>DSHFKUERU</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>SHFKUERUG</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>HFKUERUGV</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>FKUERUGVM</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>KUERUGVMN</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>UERUGVMNB</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>ERUGVMNBA</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>RUGVMNBAD</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>UGVMNBADS</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>GVMNBADSF</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>VMNBADSFM</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>MNBADSFMJ</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>NBADSFMJR</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>BADSFMJRF</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>ADSFMJRFS</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>DSFMJRFSJ</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>SFMJRFSJH</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>FMJRFSJHS</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>MJRFSJHSM</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>JRFSJHSMA</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>RFSJHSMAD</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>FSJHSMADH</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>SJHSMADHB</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>JHSMADHBJ</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>HSMADHBJA</td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td>SMADHBJAS</td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td>MADHBJASD</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>122</th>
+      <td>CBVYYIWUY</td>
+    </tr>
+    <tr>
+      <th>123</th>
+      <td>BVYYIWUYR</td>
+    </tr>
+    <tr>
+      <th>124</th>
+      <td>VYYIWUYRE</td>
+    </tr>
+    <tr>
+      <th>125</th>
+      <td>YYIWUYRET</td>
+    </tr>
+    <tr>
+      <th>126</th>
+      <td>YIWUYRETR</td>
+    </tr>
+    <tr>
+      <th>127</th>
+      <td>IWUYRETRE</td>
+    </tr>
+    <tr>
+      <th>128</th>
+      <td>WUYRETREU</td>
+    </tr>
+    <tr>
+      <th>129</th>
+      <td>UYRETREUI</td>
+    </tr>
+    <tr>
+      <th>130</th>
+      <td>YRETREUIH</td>
+    </tr>
+    <tr>
+      <th>131</th>
+      <td>RETREUIHG</td>
+    </tr>
+    <tr>
+      <th>132</th>
+      <td>ETREUIHGE</td>
+    </tr>
+    <tr>
+      <th>133</th>
+      <td>TREUIHGEI</td>
+    </tr>
+    <tr>
+      <th>134</th>
+      <td>REUIHGEIW</td>
+    </tr>
+    <tr>
+      <th>135</th>
+      <td>EUIHGEIWA</td>
+    </tr>
+    <tr>
+      <th>136</th>
+      <td>UIHGEIWAS</td>
+    </tr>
+    <tr>
+      <th>137</th>
+      <td>IHGEIWASV</td>
+    </tr>
+    <tr>
+      <th>138</th>
+      <td>HGEIWASVC</td>
+    </tr>
+    <tr>
+      <th>139</th>
+      <td>GEIWASVCH</td>
+    </tr>
+    <tr>
+      <th>140</th>
+      <td>EIWASVCHJ</td>
+    </tr>
+    <tr>
+      <th>141</th>
+      <td>IWASVCHJV</td>
+    </tr>
+    <tr>
+      <th>142</th>
+      <td>WASVCHJVS</td>
+    </tr>
+    <tr>
+      <th>143</th>
+      <td>ASVCHJVSR</td>
+    </tr>
+    <tr>
+      <th>144</th>
+      <td>SVCHJVSRJ</td>
+    </tr>
+    <tr>
+      <th>145</th>
+      <td>VCHJVSRJY</td>
+    </tr>
+    <tr>
+      <th>146</th>
+      <td>CHJVSRJYB</td>
+    </tr>
+    <tr>
+      <th>147</th>
+      <td>HJVSRJYBJ</td>
+    </tr>
+    <tr>
+      <th>148</th>
+      <td>JVSRJYBJV</td>
+    </tr>
+    <tr>
+      <th>149</th>
+      <td>VSRJYBJVB</td>
+    </tr>
+    <tr>
+      <th>150</th>
+      <td>SRJYBJVBJ</td>
+    </tr>
+    <tr>
+      <th>151</th>
+      <td>RJYBJVBJC</td>
+    </tr>
+  </tbody>
+</table>
+<p>152 rows × 1 columns</p>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
 
 </div>
     {% endraw %}

@@ -2,9 +2,18 @@
 
 __all__ = ["index", "modules", "custom_doc_links", "git_url"]
 
-index = {}
+index = {"linandFile": "00_core.ipynb",
+         "ligandList": "00_core.ipynb",
+         "human_ligandList": "00_core.ipynb",
+         "mouse_ligandList": "00_core.ipynb",
+         "mainSpec_ligandList": "00_core.ipynb",
+         "input_ligandList": "00_core.ipynb",
+         "aa_length": "00_core.ipynb",
+         "mk_fragments": "00_core.ipynb",
+         "all_aa_fragments": "00_core.ipynb",
+         "unique_aa_fragments": "00_core.ipynb"}
 
-modules = []
+modules = ["core.py"]
 
 doc_url = "https://mnm-tb.github.io/nbdev_pubtest/"
 
